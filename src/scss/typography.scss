@@ -1,0 +1,67 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Typography Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+
+// h1,
+.title-h1 {
+  @include setText(40px, 48px, 700);
+  @media(max-width: $breakpoint-sm){
+    font-size: 35px;
+  }
+}
+
+// h2,
+.title-h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  @include setText(50px, 75px, 700);
+  @media(max-width: $breakpoint-sm){
+    font-size: 30px;
+  }
+}
+
+// h3,
+.title-h3 {
+  @include setText(28px, 36px, 600);
+}
+
+// h4,
+.title-h4 {
+  @include setText(24px, 32px, 500);
+}
+
+// h5,
+.title-h5 {
+  @include setText(22px, 30px, 500);
+}
+
+// h6,
+.title-h6 {
+  @include setText(20px, 28px, 500);
+}
+
+// p,
+.text {
+  @include setText(18px, 24px, 400);
+}
+
+// span,
+.text-span {
+  @include setText(14px, 24px, 400);
+}
+
+// strong,
+.text-strong {
+  @include setText(16px, 24px, 700);
+}
+
+// a,
+.text-link {
+  @include setText(16px, 24px, 400);
+  display: block;
+  text-decoration: none;
+	user-select: none;
+
+  color: $mainText;
+}

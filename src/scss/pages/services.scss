@@ -1,0 +1,113 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Pages: Сервисы ------------------------------
+//  ------------------------------------------------------------------------------
+.services{
+  margin-top: calc(80px + 100px);
+  margin-bottom: calc(80px + 100px);
+  @media(max-width: $breakpoint-sm){
+    margin-top: calc(80px);
+    margin-bottom: calc(80px);
+  }
+}
+
+.blue-text{
+  color: $mainAction;
+}
+
+.services-block {
+  margin-bottom: 100px;
+  &__list{}
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 50px;
+    }
+  }
+  &__wrapper{}
+
+  &__info{
+    padding: 30px 0;
+    grid-column: span 7;
+
+    @media(max-width: $breakpoint-sm){
+      grid-column: span 12;
+    }
+    @media(max-width: 400px){
+      grid-column: span 8;
+    }
+  }
+  &__text{
+    font-size: 20px;
+    margin-bottom: 30px;
+    @media(max-width: $breakpoint-sm){
+      font-size: 16px;
+    }
+    &--action{
+      font-size: 25px;
+      @media(max-width: $breakpoint-sm){
+        font-size: 18px;
+      }
+    }
+  }
+  &__btn{
+    @media(max-width: $breakpoint-sm){
+      max-width: 100%;
+    }
+  }
+
+  &__title{
+    text-align: right;
+    grid-column: span 5;
+
+    @media(max-width: $breakpoint-sm){
+      order: -1;
+      grid-column: span 12;
+      text-align: center;
+    }
+    @media(max-width: 400px){
+      grid-column: span 8;
+    }
+    &--invers{
+      @media(min-width: $breakpoint-sm){
+        order: -1;
+        text-align: left;
+      }
+    }
+  }
+  &__name{
+    font-size: 40px;
+    @media(max-width: $breakpoint-sm){
+      font-size: 25px;
+    }
+    margin: 0 5px;
+    &--big{
+      font-size: calc(40px + 15px);
+      width: 100%;
+      display: inline-block;
+      @media(max-width: $breakpoint-sm){
+        font-size: 30px;
+      }
+    }
+  }
+  &__link{
+    font-size: 20px;
+    margin: 0 5px;
+    @media(max-width: $breakpoint-sm){
+      font-size: 16px;
+    }
+  }
+}
+
+.listing-tools{
+  margin: 10px 0 10px;
+  &__item{
+    font-size: 20px;
+    @media(max-width: $breakpoint-sm){
+      font-size: 16px;
+    }
+    border: 1px solid $mainText;
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+    margin: 5px;
+  }
+}

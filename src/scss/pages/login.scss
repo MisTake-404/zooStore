@@ -1,0 +1,45 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Pages: Авторизация ------------------------------
+//  ------------------------------------------------------------------------------
+.login{
+  margin-top: calc(80px + 100px);
+  margin-bottom: calc(80px + 100px);
+	@media(max-width: $breakpoint-sm){
+    margin-top: calc(80px);
+    margin-bottom: calc(80px);
+  }
+}
+.login-block {
+	&__title{
+		text-align: center;
+	}
+
+	&__container {
+	}
+
+	&__content {
+		background-color: rgb(255, 255, 255, 0.13);
+    backdrop-filter: blur(10px);
+		border: 2px solid rgba(255,255,255,0.1);
+		box-shadow: 0 0 40px rgb(8 7 16 / 60%);
+    border-radius: 10px;
+		padding: 20px 50px 30px;
+	}
+
+	&__form {
+	}
+
+	&__input {
+		max-width: 100%;
+		border: 1px solid $mainAction;
+		background-color: #fff;
+	}
+
+	&__btn {
+		padding: 15px 0 35px;
+		max-width: 100%;
+		border-color: $mainAction;
+		background-color: $mainText;
+	}
+
+}

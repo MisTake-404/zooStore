@@ -1,0 +1,41 @@
+  <section class="application" id="applicationt">
+    <div class="container application__container">
+      <h2 class="title-h2 application__title">Расскажите о своем
+        <span class="title-h2 application__title--blue">
+          проекте
+        </span>
+      </h2>
+
+      <div class="application__content">
+        <form action="include/forms.php" class="application__form">
+          <input class="input text application__input"  type="text" name="name" value="" placeholder="Имя" required>
+          <input class="input text application__input" type="text" name="phone" value="" placeholder="Телефон" required>
+          <input class="input text application__input" type="email" name="email" value="" placeholder="Почта" required>
+          <select class="input application__select" name="sum">
+            <option class="input text application__input" value="" disabled>Бюджет</option>
+            <option class="input text application__input" value="sum1">До 30 000руб</option>
+            <option class="input text application__input" value="sum2">От 30 000руб до 80 000руб</option>
+            <option class="input text application__input" value="sum3">Более 80 000руб</option>
+          </select>
+          <textarea class="input text application__input" name="details" placeholder="Детали"></textarea>
+          <div class="block-align">
+            <div class="block-align__left">
+              <p class="text application__desc">Краткая суть проекта, какие сроки, другие подробности</p>
+              <input class="input btn blue-btn application__input application__btn" type="submit" name="application__btn" value="Заказать проект">
+            </div>
+            <div class="input__file block-align__right" bis_skin_checked="1">
+              <div class="input__file--form-group" bis_skin_checked="1">
+                <label class="input__file--label">
+                  <i class="material-icons">attach_file</i>
+                  <span class="input__file--title">Добавить файл</span>
+                  <input type="file" class="display-none" name="file">
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

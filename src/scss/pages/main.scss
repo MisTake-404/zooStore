@@ -1,0 +1,103 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Pages: Главная ------------------------------
+//  ------------------------------------------------------------------------------
+.index{
+  padding-top: calc(80px + 100px);
+  margin-bottom: calc(80px + 100px);
+  // position: relative;
+
+  @media(max-width: $breakpoint-sm){
+    padding-top: calc(80px);
+    margin-bottom: calc(80px);
+  }
+}
+
+.display-none{
+  display: none;
+}
+
+.our-product {
+  margin-bottom: 100px;
+  @media(max-width: $breakpoint-sm){
+    margin-bottom: 30px;
+  }
+
+	&__block {
+    margin-bottom: 50px;
+	}
+
+	&__card {
+    grid-column: span 4;
+    transition: .3s;
+
+    @media(max-width: $breakpoint-md){
+      grid-column: span 12;
+    }
+    @media(max-width: $breakpoint-sm){
+      grid-column: span 6;
+    }
+
+
+    &:hover{
+      transform: scale(1.05);
+    }
+
+    // &:not(:last-child){
+    //   margin-bottom: 20px;
+    // }
+	}
+
+	&__image {
+    img{
+      min-height: 300px;
+      max-height: 350px;
+      border-radius: 20px 20px 0 0;
+    }
+	}
+
+	&__info {
+    background-color: $mainText;
+    border-radius: 0 0 20px 20px;
+    padding: 20px;
+	}
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+  }
+
+	&__item {
+    color: $mainBackground;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    @include setText(18px, 500);
+
+
+    &--name {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin-bottom: 10px;
+    }
+
+    &--price {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      text-align: right;
+    }
+
+    &--technology {
+      font-size: 16px;
+    }
+
+    &--date {
+      font-size: 16px;
+      text-align: right;
+    }
+	}
+
+  &__btn{
+    margin: 0 auto;
+    background-color: #453F55;
+  }
+}

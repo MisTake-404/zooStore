@@ -1,0 +1,64 @@
+<?php require "include/connect.php"; ?>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="HandheldFriendly" content="true">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+  <meta name="google" value="notranslate">
+	<meta name="robots" content="index,follow" />
+
+	<meta name="description" content="Описание страницы">
+	<meta name="keywords" content="ключевое слово 1, ключевое слово 2, ключевое слово 3…" />
+	<meta name="author" content="Author site">
+	<meta name="copyright" content="Copyright site">
+
+  <title>@@title</title>
+
+  <link rel="icon" href="@img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="@img/favicons/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/main.min.css" />
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__container">
+      <div class="menu-burger__header">
+        <span></span>
+      </div>
+
+      <div class="logo header__logo">
+        <a href="/" class="text-link logo__link">
+          <img src="@img/logo.svg" alt="" class="img logo__img">
+        </a>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="menu header__menu">
+          <!-- Если сотрудник -->
+          <!-- Если авторизован (проекты) -->
+          <li><a href="go_project-company.html" class="text-link menu__item menu__item--active">Проекты</a></li>
+          <!-- Не авторизован -->
+          <li><a href="go_login.html" class="text-link menu__item">Личный кабинет</a></li>
+           <!-- Если Авторизован -->
+          <li><a href="./include/logout.php" class="text-link menu__item">Выйти</a></li>
+
+          <!-- Если клиент -->
+          <!-- Если авторизован (проект)-->
+          <!-- <li><a href="go_project-process.html" class="text-link menu__item menu__item--active">Мой заказ</a></li> -->
+          <!-- Не авторизован -->
+          <!-- <li><a href="go_login.html" class="text-link menu__item">Личный кабинет</a></li> -->
+          <!-- Если Авторизован -->
+          <!-- <li><a href="go_personal-account.html" class="text-link menu__item">Личный кабинет</a></li> -->
+          <!-- Если Авторизован -->
+          <!-- <li><a href="../include/logout.php" class="text-link menu__item">Выйти</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>

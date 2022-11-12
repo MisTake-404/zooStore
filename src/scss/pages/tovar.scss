@@ -1,0 +1,36 @@
+// Товар
+.tovar{
+  padding-top: calc(80px + 100px);
+  margin-bottom: calc(80px + 100px);
+  // position: relative;
+
+  @media(max-width: $breakpoint-sm){
+    padding-top: calc(80px);
+    margin-bottom: calc(80px);
+  }
+}
+
+.product {
+
+	&__photo {
+    grid-column: 6 span;
+	}
+
+	&__content {
+		grid-column: 6 span;
+	}
+
+	&__text {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+
+	&__btn {
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		font-size: 30px;
+	}
+
+}

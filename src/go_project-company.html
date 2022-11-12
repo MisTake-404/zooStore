@@ -1,0 +1,46 @@
+@@include('html/go_header.html', {
+  "title": "Проекты"
+})
+
+<main class="project-company" id="project-company">
+
+  <section class="title" id="title">
+    <div class="container title">
+      <h1 class="title-h1 title__h1">Проекты</h1>
+    </div>
+  </section>
+
+  <section class="all-projects" id="all-projects">
+    <div class="container all-projects__container">
+      <div class="grid">
+        <ul class="grid__wrapper all-projects__list">
+          <li class="all-projects__item">
+            <div class="main-status main-status__all-projects">
+              <h2 class="title-h2 title__h2">Kavarna</h2>
+              <p class="text main-status__text">№: 1002</p>
+              <p class="text main-status__text">Статус: Не завершен</p>
+              <p class="text main-status__text">Этап: 1/7</p>
+              <p class="text main-status__text">04.11.2022</p>
+              <a href="go_project-process.html" class="text-link btn blue-btn all-projects__btn">Просмотр</a>
+              <a href="go_admin-panel.html" class="text-link btn blue-btn">Редактирование</a>
+            </div>
+          </li>
+          <li class="all-projects__item">
+            <div class="main-status main-status__all-projects">
+              <h2 class="title-h2 title__h2">BrowserMoney</h2>
+              <p class="text main-status__text">№: 1001</p>
+              <p class="text main-status__text">Статус: Завершен</p>
+              <p class="text main-status__text">Этап: 7/7</p>
+              <p class="text main-status__text">01.10.2022</p>
+              <a href="go_project-process.html" class="text-link btn blue-btn all-projects__btn">Просмотр</a>
+              <a href="go_admin-panel.html" class="text-link btn blue-btn">Редактирование</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+@@include('html/footer.html', {})

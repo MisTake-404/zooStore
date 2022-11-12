@@ -1,0 +1,31 @@
+@@include('html/header.html', {
+  "title": "Товар"
+})
+
+<div class="background-decor"></div>
+
+<main class="tovar" id="tovar">
+
+  <section class="product" id="product">
+    <div class="container">
+      <h1 class="title-h2">товар 1</h1>
+      <div class="grid">
+        <div class="grid__wrapper">
+          <div class="product__photo">
+            <img src="@img/resourse/photoProject.jpg" alt="" class="img">
+          </div>
+          <div class="product__content">
+            <p class="text product__text">Котегория: </p>
+            <p class="text product__text">233 Р </p>
+            <a href="#" class="text-link btn product__btn">В корзину</a>
+            <h2 class="title-h2 product__title">Описание</h2>
+            <p class="text product__text">text</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+@@include('html/footer.html', {})

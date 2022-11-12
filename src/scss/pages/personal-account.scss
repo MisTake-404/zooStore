@@ -1,0 +1,87 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Pages: Личный аккаунт ------------------------------
+//  ------------------------------------------------------------------------------
+.personal-account{
+  margin-top: calc(80px + 100px);
+  margin-bottom: calc(80px + 100px);
+  @media(max-width: $breakpoint-sm){
+    margin-top: calc(80px);
+    margin-bottom: calc(80px);
+  }
+}
+
+
+.about-user {
+  margin-bottom: 50px;
+
+	&__container {
+
+	}
+
+	&__info {
+    max-width: 600px;
+    margin: 0 auto;
+    grid-column: 6 span;
+    border: 2px solid $mainAction;
+    border-radius: 20px;
+    padding: 10px;
+	}
+
+  &__text {
+
+	}
+
+}
+
+.my-basket {
+
+	&__container {
+
+	}
+
+	&__list {
+    border: 2px solid $mainAction;
+		border-radius: 10px;
+	}
+
+	&__item {
+		border-bottom: 1px solid $mainAction;
+		display: flex;
+		padding: 10px;
+		justify-content: space-between;
+		align-items: center;
+
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+
+	&__tovar {
+		margin-right: 30px;
+	}
+
+	&__price {
+
+	}
+
+	&__left {
+		display: flex;
+		align-items: center;
+	}
+	&__right {
+		display: flex;
+		align-items: center;
+	}
+
+	&__del {
+		max-width: 200px;
+		padding: 5px 25px;
+		margin-right: 5px;
+	}
+
+	&__look {
+		max-width: 200px;
+		padding: 5px 25px;
+	}
+
+}

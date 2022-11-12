@@ -1,0 +1,69 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- Mixins Files ---------------------------------
+//  ------------------------------------------------------------------------------
+// +++
+
+// Шрифт
+@mixin setText($size: 18px, $weight: 500, $style: normal) {
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin transition-colors {
+  transition-property: background-color, color, box-shadow, border-color;
+  transition-timing-function: linear;
+  transition-duration: $timeTrans;
+}
+
+@mixin fix-height {
+  height: intrinsic;
+  height: -moz-max-content;
+  height: -webkit-max-content;
+}
+
+@mixin fix-width {
+  width: intrinsic;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+}
+
+@mixin background-rules {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+/* Подключение шрифта вручную */
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+  font-family: $font_name;
+  font-display: swap;
+  src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+  font-weight: #{$weight};
+  font-style: #{$style};
+  }
+}
+
+/* Работа с типографией */
+// @mixin setText($fontSize, $lineHeight, $fontWeight) {
+//   font-size: $fontSize;
+//   font-weight: $fontWeight;
+//   line-height: $lineHeight;
+// }
+
+/* Удобная Сетка */
+@mixin setGrid($columns, $rows, $rowsValue, $columnGap, $rowGap) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-template-rows: repeat($rows, $rowsValue);
+  column-gap: $columnGap;
+  row-gap: $rowGap;
+  position: relative;
+}
