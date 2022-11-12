@@ -13,7 +13,6 @@
 }
 
 .footer {
-	// background-color: red;
 
 	&__contact {
 		border-bottom: 1px solid $mainText;
@@ -21,7 +20,7 @@
 	}
 
 	&__block {
-		grid-column: span 4;
+		grid-column: span 6;
 		@media(max-width: $breakpoint-sm){
 	    grid-column: span 6;
 	  }
